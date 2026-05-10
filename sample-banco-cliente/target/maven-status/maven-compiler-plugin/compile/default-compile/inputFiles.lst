@@ -1,0 +1,7 @@
+/home/alessandrots/Projetos_JV/Solucao_banco/sample-banco-cliente/src/main/java/br/com/banco/SistemaBancoApplication.java
+/home/alessandrots/Projetos_JV/Solucao_banco/sample-banco-cliente/src/main/java/br/com/banco/cliente/controller/ClienteController.java
+/home/alessandrots/Projetos_JV/Solucao_banco/sample-banco-cliente/src/main/java/br/com/banco/cliente/domain/Cliente.java
+/home/alessandrots/Projetos_JV/Solucao_banco/sample-banco-cliente/src/main/java/br/com/banco/cliente/dto/ClienteRequest.java
+/home/alessandrots/Projetos_JV/Solucao_banco/sample-banco-cliente/src/main/java/br/com/banco/cliente/dto/ClienteResponse.java
+/home/alessandrots/Projetos_JV/Solucao_banco/sample-banco-cliente/src/main/java/br/com/banco/cliente/repository/ClienteRepository.java
+/home/alessandrots/Projetos_JV/Solucao_banco/sample-banco-cliente/src/main/java/br/com/banco/cliente/service/ClienteService.java
