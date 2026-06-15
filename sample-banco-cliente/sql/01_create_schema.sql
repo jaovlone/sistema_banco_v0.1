@@ -10,9 +10,10 @@ CREATE TABLE cliente (
     cpf VARCHAR(11) NOT NULL UNIQUE,
     email VARCHAR(150) NOT NULL UNIQUE,
     telefone VARCHAR(20),
+    CONSTRAINT ck_cliente_ativo CHECK (ativo IN ('0', '1'))
     data_cadastro TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    ativo BOOLEAN NOT NULL DEFAULT TRUE
-);
+    ativo CHAR(1) NOT NULL DEFAULT '1',);
+
 
 CREATE TABLE conta (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),

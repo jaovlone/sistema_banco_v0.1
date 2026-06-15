@@ -24,62 +24,67 @@ public class Cliente {
 
     private String telefone;
 
-    @Column(name = "data_cadastro")
+    @Column(name = "data_cadastro", nullable = false)
     private LocalDateTime dataCadastro;
 
-    private Boolean ativo;
+    @Column(nullable = false, length = 1)
+    private String ativo;
 
     @PrePersist
     public void prePersist() {
         this.dataCadastro = LocalDateTime.now();
-        this.ativo = true;
+        this.ativo = "1";
     }
 
     public UUID getId() {
         return id;
     }
 
-    public void setId(UUID id) {
-        this.id = id;
-    }
-
     public String getNome() {
         return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
     }
 
     public String getCpf() {
         return cpf;
     }
 
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
-    }
-
     public String getEmail() {
         return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
     }
 
     public String getTelefone() {
         return telefone;
     }
 
-    public void setTelefone(String telefone) {
-        this.telefone = telefone;
-    }
-
     public LocalDateTime getDataCadastro() {
         return dataCadastro;
     }
 
-    public Boolean getAtivo() {
+    public String getAtivo() {
         return ativo;
+    }
+
+    public void setId(UUID id) {
+        this.id = id;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
+    }
+
+    public void setAtivo(String ativo) {
+        this.ativo = ativo;
     }
 }
